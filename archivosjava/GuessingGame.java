@@ -34,11 +34,12 @@ public class GuessingGame {
 
         // Try-with-resource para AutoClose.
         try {
-                Scanner scanner = new Scanner(System.in) catch
+                Scanner scanner = new Scanner(System.in)
                 while (!guessed) {
                     int attempt = getUserInput(scanner);
                     guessed = checkGuess(attempt, randomNumber);
             }
+        catch
         }
     }
 
