@@ -33,10 +33,11 @@ public class GuessingGame {
         System.out.println("Se ha generado un numero entre " + MIN_NUMBER + " y " + MAX_NUMBER + ". Intenta adivinarlo.");
 
         // Try-with-resource para AutoClose.
-        try (Scanner scanner = new Scanner(System.in)) {
-            while (!guessed) {
-                int attempt = getUserInput(scanner);
-                guessed = checkGuess(attempt, randomNumber);
+        try {
+                Scanner scanner = new Scanner(System.in) catch
+                while (!guessed) {
+                    int attempt = getUserInput(scanner);
+                    guessed = checkGuess(attempt, randomNumber);
             }
         }
     }
